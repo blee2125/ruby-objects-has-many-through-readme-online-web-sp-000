@@ -5,6 +5,7 @@ class Customer
   def initialize(name, age)
     @name= name
     @age= age
+    @@all << @name, @age
   end
 
   def self.all
@@ -12,6 +13,6 @@ class Customer
   end
 
   def new_meal
-    
+
   end
 end
