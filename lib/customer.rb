@@ -1,5 +1,5 @@
 class Customer
-
+  attr_accessor :name, :age
   @@all= []
 
   def initialize(name, age)
@@ -12,7 +12,7 @@ class Customer
     @@all
   end
 
-  def new_meal
-
+  def new_meal(waiter, total, tip)
+    Meal.new(waiter, self, total, tip)
   end
 end
